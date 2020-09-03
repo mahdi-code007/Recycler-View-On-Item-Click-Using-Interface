@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/row_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/row_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/book_img"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/row_bg_img"
+        app:layout_constraintStart_toStartOf="@+id/row_bg_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elfel_elasrq" />
+
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="في قلبي انثي عبرية"
+        android:textSize="25sp"
+        android:autoSizeMaxTextSize="26sp"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toEndOf="@+id/book_img"
+        app:layout_constraintTop_toTopOf="@+id/row_bg_img" />
+
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="احمد مراد"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toEndOf="@+id/book_img"
+        app:layout_constraintTop_toBottomOf="@+id/book_name_tv" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="2.5"
+        android:stepSize=".5"
+        app:layout_constraintStart_toEndOf="@+id/book_img"
+        app:layout_constraintTop_toBottomOf="@+id/book_author" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowMoreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/book_img2"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fe_qalbe_onsa" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="مقدمة الكتاب"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintBottom_toTopOf="@+id/books_intros_tv2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_img2" />
+
+        <TextView
+            android:id="@+id/books_intros_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="10sp"
+            android:padding="10dp"
+            android:text=" كيف ستكون مصر عام 2023؟ لقد عزَلَ الأغنياء أنفسهم في (يوتوبيا) الساحل الشمالي تحت حراسة المارينز الأمريكيين، يتعاطون المخدرات ويمارسون المتع المحرمة إلى أقصاها، بينما ينسحق الفقراء خارجها ينهش بعضهم لحم بعض من أجل العيش، دونما كهرباء أو صرف صحي أو رعاية طبية من أي نوع. ولكن حين يتسلل الراوي وصديقته (جرمينال) خارج (يوتوبيا) بدافع الملل وبحثا عن (صيد بشري) مناسب يحدث ما يهدد الوضع المستقر بالانفجار.  فيما يشبه هول علامات يوم القيامة، تدق هذه الرواية المثيرة ناقوس الخطر، تكاد تشك إذ تنهيها أهي بالفعل رواية متخيلة، أم إن كاتبها تسلل من المستقبل القريب لينقل لك هوله بحياد مذهل؟"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
